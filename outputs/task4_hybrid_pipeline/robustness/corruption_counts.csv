@@ -1,0 +1,7 @@
+image_id,condition,n_objects
+test_000,clean,8
+test_000,blur,7
+test_000,lowcontrast,1
+test_004,clean,43
+test_004,blur,10
+test_004,lowcontrast,1

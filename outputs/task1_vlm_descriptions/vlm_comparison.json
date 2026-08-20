@@ -1,0 +1,28 @@
+{
+  "naive_prompt": {
+    "prompt": "What do you see in this image?",
+    "response": " The image appears to be a digital graphic or illustration with a series of dots in various sizes and positions against a dark background. The dots are connected with lines that give the impression of a network or a constellation. The style is reminiscent of a digital map or a visual representation of some kind of data or points of interest. "
+  },
+  "engineered_run_1": {
+    "prompt": "You are assisting with an educational biomedical image analysis exercise.\nYou are looking at a fluorescence microscopy image showing stained cell nuclei.\n\nYour role is strictly descriptive, not diagnostic. Do not attempt to diagnose disease,\nidentify pathology, or make clinical judgements. This image is for research and teaching only.\n\nDescribe what you observe and return your answer as a JSON object with exactly these fields:\n\n{\n  \"modality\": \"the imaging modality shown\",\n  \"tissue_type\": \"the type of tissue or sample shown, or 'uncertain' if not clear\",\n  \"notable_features\": \"a short description of visible features, e.g. clustering, brightness, shape variation\",\n  \"image_quality\": \"your assessment of image quality, e.g. sharp, noisy, low contrast\",\n  \"approx_density_estimate\": \"your rough estimate of nucleus density: sparse, normal, dense, or clustered\"\n}\n\nIf you are not confident about any field, write \"uncertain\" rather than guessing.\nReturn only the JSON object, nothing else.\n",
+    "response": " ```json\n{\n  \"modality\": \"fluorescence microscopy\",\n  \"tissue_type\": \"uncertain\",\n  \"notable_features\": \"nuclei appear to be clustered and evenly dispersed throughout the field of view\",\n  \"image_quality\": \"image quality appears to be low, with noticeable noise and a low contrast that makes it difficult to discern finer details\",\n  \"approx_density_estimate\": \"uncertain\"\n}\n``` ",
+    "parsed_json": {
+      "modality": "fluorescence microscopy",
+      "tissue_type": "uncertain",
+      "notable_features": "nuclei appear to be clustered and evenly dispersed throughout the field of view",
+      "image_quality": "image quality appears to be low, with noticeable noise and a low contrast that makes it difficult to discern finer details",
+      "approx_density_estimate": "uncertain"
+    }
+  },
+  "engineered_run_2": {
+    "prompt": "You are assisting with an educational biomedical image analysis exercise.\nYou are looking at a fluorescence microscopy image showing stained cell nuclei.\n\nYour role is strictly descriptive, not diagnostic. Do not attempt to diagnose disease,\nidentify pathology, or make clinical judgements. This image is for research and teaching only.\n\nDescribe what you observe and return your answer as a JSON object with exactly these fields:\n\n{\n  \"modality\": \"the imaging modality shown\",\n  \"tissue_type\": \"the type of tissue or sample shown, or 'uncertain' if not clear\",\n  \"notable_features\": \"a short description of visible features, e.g. clustering, brightness, shape variation\",\n  \"image_quality\": \"your assessment of image quality, e.g. sharp, noisy, low contrast\",\n  \"approx_density_estimate\": \"your rough estimate of nucleus density: sparse, normal, dense, or clustered\"\n}\n\nIf you are not confident about any field, write \"uncertain\" rather than guessing.\nReturn only the JSON object, nothing else.\n",
+    "response": " ```json\n{\n  \"modality\": \"fluorescence microscopy\",\n  \"tissue_type\": \"uncertain\",\n  \"notable_features\": \"round, dark-stained nuclei with bright, possibly fluorescent, edges, clustered together\",\n  \"image_quality\": \"normal\",\n  \"approx_density_estimate\": \"clustered\"\n}\n``` ",
+    "parsed_json": {
+      "modality": "fluorescence microscopy",
+      "tissue_type": "uncertain",
+      "notable_features": "round, dark-stained nuclei with bright, possibly fluorescent, edges, clustered together",
+      "image_quality": "normal",
+      "approx_density_estimate": "clustered"
+    }
+  }
+}

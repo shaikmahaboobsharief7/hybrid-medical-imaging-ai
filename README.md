@@ -1,1 +1,0 @@
-# hybrid-medical-imaging-ai

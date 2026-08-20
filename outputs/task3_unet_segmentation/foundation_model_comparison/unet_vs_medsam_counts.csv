@@ -1,0 +1,4 @@
+image_id,unet_n_objects,medsam_coverage_percent
+test_000,8,99.2
+test_002,27,99.3
+test_004,43,99.5
